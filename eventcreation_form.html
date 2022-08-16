@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <h2 class="text-center display-1">Création d'évènement</h2>
+      <form  class="d-flex flex-column mx-auto" style="width: 50%">
+        <fieldset>       
+            <!-- Identification de l'user -->
+          
+            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+        
+            <!-- Détails de l'évènement -->
+
+          <div class="form-group">
+            <label for="exampleInputTitle" class="form-label mt-4">Titre de l'évènement</label>
+            <input type="title" class="form-control" id="exampleInputTitle" placeholder="Title">
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea" class="form-label mt-4">Description de ton évènement</label>
+            <textarea class="form-control" id="exampleTextarea" placeholder="Description" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputTitle" class="form-label mt-4">Lieu de l'évènement</label>
+            <input type="title" class="form-control" id="exampleInputTitle" placeholder="Lieu">
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect1" class="form-label mt-4">Selectionne ton type d'évènement</label>
+            <select class="form-select" id="exampleSelect1">
+              <option>Indoor</option>
+              <option>Outdoor</option>
+              <option>Concert</option>
+              <option>Sport</option>
+              <option>Entreprise</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="formFile" class="form-label mt-4">Ajouter une photo à l'évènement</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+
+            <!-- Prix et achat -->
+
+          <div class="form-group">
+            <label class="form-label mt-4">Prix de l'évènement</label>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <span class="input-group-text">€</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nom complet du participant" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">Valider</button>
+              </div>
+            </div>
+          </div>
+
+            <!-- Submit button -->
+            
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="submit" class="btn btn-primary">Valider</button>
+          </div>
+                  
+            <!-- Radio buttons, checkboxes, switches, ranges -->
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="mt-4">Mise en ligne de l'évènement</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+            <label class="form-check-label" for="optionsRadios1">
+              Mettre en ligne
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+            <label class="form-check-label" for="optionsRadios3">
+              Hors ligne, publier plus tard
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="mt-4">Qui organise l'évènement</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Je suis l'organisateur de cet évènement
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+            <label class="form-check-label" for="flexCheckChecked">Je ne suis pas l'organisateur de cet évènement</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="mt-4">Privée / Public</legend>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Seul les invités disposant du lien peuvent voir l'évènement</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Cet évènement est public, tout le monde peut y participer</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="mt-4">Gamme de prix</legend>
+            <label for="customRange1" class="form-label">Example de gamme</label>
+            <input type="range" class="form-range" id="customRange1">
+            <label for="disabledRange" class="form-label">Désactiver la gamme de prix</label>
+            <input type="range" class="form-range" id="disabledRange" disabled="">
+        </fieldset>
+      </form>
+
+            <!-- Inputs -->
+
+  
+    <form class="d-flex flex-column mx-auto" style="width: 50%">
+      <div class="form-group">
+        <fieldset disabled="">
+          <label class="form-label" for="disabledInput">Désactivé l'input</label>
+          <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <fieldset>
+          <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
+          <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="">
+        </fieldset>
+      </div>
+
+      <div class="form-group has-success">
+        <label class="form-label mt-4" for="inputValid">Valid input</label>
+        <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+        <div class="valid-feedback">
+          Success! You've done it.
+        </div>
+      </div>
+
+      <div class="form-group has-danger">
+        <label class="form-label mt-4" for="inputInvalid">Invalid input</label>
+        <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+        <div class="invalid-feedback">
+          Sorry, that username's taken. Try another?
+        </div>
+      </div>  
+  
+  
+  
+  </body>
+</html>
+
+
